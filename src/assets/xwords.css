@@ -1,0 +1,33 @@
+:root {
+    --main-bg-color: black;
+    --main-text-color: limegreen;
+    --main-contrast-color: green;
+}
+
+* {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: sans-serif;
+    font-size: 32px;
+}
+
+body {
+    margin: 50px;
+}
+
+div.xwords_container {
+    border: 0 none;
+}
+
+input.xwords_letter {
+    border: 1px var(--main-contrast-color) solid;
+    width: 1em;
+}
+
+input.xwords_letter:disabled {
+    background-color: var(--main-contrast-color);
+}
+
+button.xwords_action_button {
+    margin: 20px;
+}
