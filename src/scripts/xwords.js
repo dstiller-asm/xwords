@@ -207,35 +207,3 @@ Puzzle.prototype = {
         }
     }
 };
-
-function init() {
-    const w = 10, h = 10;
-    const state1 = [
-        '   b      ',
-        ' g a    b ',
-        ' u n  grip',
-        'gang h  b ',
-        ' r l o  l ',
-        'satellite ',
-        ' n s y r  ',
-        ' t     a  ',
-        ' e minimum',
-        ' e        '
-    ];
-    const words_used1 = [
-        'bangles',
-        'gang',
-        'guarantee',
-        'satellite',
-        'minimum',
-        'holy',
-        'tram',
-        'grip',
-        'bible'
-    ];
-    let p = new Puzzle(w, h, 'xwords1', document.body);
-    p.import(state1);
-    let hb = new HintBox(state1, words_used1, p);
-}
-
-init();
