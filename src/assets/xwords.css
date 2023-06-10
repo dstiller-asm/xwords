@@ -21,6 +21,7 @@ div.xwords_container {
 
 input.xwords_letter {
     border: 1px var(--main-contrast-color) solid;
+    text-align: center;
     width: 1em;
 }
 
@@ -30,4 +31,10 @@ input.xwords_letter:disabled {
 
 button.xwords_action_button {
     margin: 20px;
+}
+
+div.xwords_hintbox div {
+    float: right;
+    font-size: 50%;
+    margin: 10px;
 }
